@@ -1,0 +1,22 @@
+{
+    "name": "RunescapeChallenges/RunescapeTools",
+    "description": "A collection of tools for the MMORPG Runescape",
+    "keywords": ["runescape", "mmorpg", "rs", "jagex", "rs3", "rs2", "oldschool", "osrs", "api", "highscore"],
+    "license": "MIT",
+    "authors": [
+        {
+            "name": "Tom ",
+            "email": "tom@wfuk.com"
+        }
+    ],
+    "require": {
+        "php": ">=5.4.0",
+        "illuminate/support": "4.1.*"
+    },
+    "autoload": {
+        "psr-0": {
+            "RunescapeChallenges\\RunescapeTools": "src/"
+        }
+    },
+    "minimum-stability": "stable"
+}
