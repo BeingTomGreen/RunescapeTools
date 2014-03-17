@@ -1,4 +1,4 @@
-<?php namespace RunescapeChallenges\RunescapeTools;
+<?php namespace RSChallenges\RunescapeTools;
 
 use Illuminate\Support\ServiceProvider;
 

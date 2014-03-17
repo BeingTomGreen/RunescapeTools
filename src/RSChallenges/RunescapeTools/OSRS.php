@@ -1,10 +1,10 @@
-<?php namespace RunescapeChallenges\RunescapeTools;
+<?php namespace RSChallenges\RunescapeTools;
 
-class RS3 {
+class OSRS {
 
   /**
    * __construct
-   * 
+   *
    * @param RSTools $rstools Our RSTools instance
    *
    * @return void
@@ -13,6 +13,5 @@ class RS3 {
   {
     $this->rstools = $rstools;
   }
-
 
 }
