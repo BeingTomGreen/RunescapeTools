@@ -27,7 +27,9 @@ Some of these may need two be done twice, once for EoC/RS3 and once for OldSchoo
 
 ### Contributing
 
-Found a bug? Think you can improve on something? Shoot me a pull request, I very much welcome contributions, even if you just [report an issue](https://github.com/RsChallenges/RunescapeTools/issues)!
+Found a bug? Think you can improve on something? Shoot me a pull request / [email](mailto:tom@beingtomgreen.com) / [Tweet](https://twitter.com/beingtomgreen).
+
+I very much welcome contributions, even if you just [report an issue](https://github.com/RsChallenges/RunescapeTools/issues)!
 
 The code isn't fully backed up by tests (at least at the time of writing), but please make sure you are running the test's before submitting a pull request!
 
