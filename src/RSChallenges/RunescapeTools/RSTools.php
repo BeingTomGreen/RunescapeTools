@@ -18,21 +18,7 @@ class RSTools {
   /**
    * Takes a large number and shrinks it down returning the shorter number with the appropriate metric prefix
    *
-   * @param  int      $number The number to shorten
-   *
-   * @todo specify the number of decimal places to return the shortened number (so it can return 1.47b instead of 1.478...9b)
-   * @todo calling pow() 9 times seems like a bad idea
-   *
-   * @return string   The shortened number with the appropriate metric prefix
-   */
-
-
-
-
-  /**
-   * Takes a large number and shrinks it down returning the shorter number with the appropriate metric prefix
-   *
-   * @todo calling pow() 9 times seems like a bad idea
+   * @todo calling pow() 9 times seems like a bad idea....
    *
    * @param  integer  $number       The number to shorten
    * @param  boolean $limitTo32Bit  If true, we will never return more than $this->max32BitInterger
@@ -47,10 +33,12 @@ class RSTools {
       throw new \InvalidArgumentException('Expected numeric value, '. gettype($number) .' passed!', 1);
     }
 
-    // Check if we want to limit to 32bit integers
-      // Check if $number is more than $this->max32BitInterger
-      // If so return $this->max32BitInterger formatted
-    //
+    // Check if we want to limit to 32 bit integers
+    if ($limitTo32Bit === true)
+    {
+      // Override $number to be the max 32 bit integer
+      $number = $limitTo32Bit;
+    }
 
     // Handle 1000-999999
     if ($number >= pow(10, 3) && $number < pow(10, 6))
@@ -71,7 +59,6 @@ class RSTools {
     else {
       return $number;
     }
-
   }
 
   public function expandNumber()
