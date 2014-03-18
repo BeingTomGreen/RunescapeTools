@@ -1,6 +1,6 @@
 ## Runescape Tools
 
-[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/RsChallenges/RunescapeTools/badges/quality-score.png?s=f89245ede2725f6a3bf0388d4d70cc263a4e1287)](https://scrutinizer-ci.com/g/RsChallenges/RunescapeTools/)
+[![Latest Stable Version](https://poser.pugx.org/rschallenges/runescapetools/v/stable.png)](https://packagist.org/packages/rschallenges/runescapetools) [![Total Downloads](https://poser.pugx.org/rschallenges/runescapetools/downloads.png)](https://packagist.org/packages/rschallenges/runescapetools) [![Latest Unstable Version](https://poser.pugx.org/rschallenges/runescapetools/v/unstable.png)](https://packagist.org/packages/rschallenges/runescapetools) [![License](https://poser.pugx.org/rschallenges/runescapetools/license.png)](https://packagist.org/packages/rschallenges/runescapetools)
 
 A collection of tools for the MMORPG Runescape.
 
