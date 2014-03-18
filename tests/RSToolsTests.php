@@ -31,10 +31,10 @@ class RSToolsTests extends PHPUnit_Framework_TestCase {
   public function test_shortenNumber_handles_invalid_input()
   {
 
-  	$this->setExpectedException('InvalidArgumentException');
+    $this->setExpectedException('InvalidArgumentException');
 
-  	$this->rsTools->shortenNumber(true);
-  	$this->rsTools->shortenNumber(11464654);
+    $this->rsTools->shortenNumber(true);
+    $this->rsTools->shortenNumber(11464654);
 
     // try {
     //   $this->rsTools->shortenNumber(true);
@@ -44,6 +44,17 @@ class RSToolsTests extends PHPUnit_Framework_TestCase {
     // }
 
     // $this->fail('shortenNumber() not correctly handling incorrect parameters.');
+  }
+
+  /**
+   * Tests that the RSTools->shortenNumber() correctly intergers over 2147483647 (the max 32 bit interger)
+   *
+   * @return void
+   */
+  public function test_shortenNumber_handles_intergers_larger_than_2147483647()
+  {
+    $this->assertEquals('2.147483647b', $this->rsTools->shortenNumber(3147483647, true));
+    $this->assertEquals('3.147483647b', $this->rsTools->shortenNumber(3147483647, false));
   }
 
 }
