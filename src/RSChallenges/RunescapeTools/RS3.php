@@ -2,6 +2,8 @@
 
 class RS3 {
 
+  private $rstools;
+
   /**
    * Holds any resources we need
    *

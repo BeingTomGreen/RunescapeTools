@@ -2,6 +2,8 @@
 
 class RSTools {
 
+  // The maximum possible value for a 32bit int
+  private $max32BitInterger = 2147483647;
 
   public function experienceToLevel()
   {
@@ -14,33 +16,62 @@ class RSTools {
   }
 
   /**
-   * [shortenNumber description]
+   * Takes a large number and shrinks it down returning the shorter number with the appropriate metric prefix
    *
    * @param  int      $number The number to shorten
    *
-   * @todo this needs to properly handle things like ->shortenNumber(1500000) which should return "1.5M" instead of "1M"
+   * @todo specify the number of decimal places to return the shortened number (so it can return 1.47b instead of 1.478...9b)
+   * @todo calling pow() 9 times seems like a bad idea
    *
-   * @return string   The shortened number
+   * @return string   The shortened number with the appropriate metric prefix
    */
-  public function shortenNumber($number)
+
+
+
+
+  /**
+   * Takes a large number and shrinks it down returning the shorter number with the appropriate metric prefix
+   *
+   * @todo calling pow() 9 times seems like a bad idea
+   *
+   * @param  integer  $number       The number to shorten
+   * @param  boolean $limitTo32Bit  If true, we will never return more than $this->max32BitInterger
+   *
+   * @return string   The shortened number with the appropriate metric prefix
+   */
+  public function shortenNumber($number, $limitTo32Bit = false)
   {
-    // Setup our array of pseudo-metric prefixes
-    $prefixes = array(9 => 'b', 6 => 'm', 3 => 'k', 0 => '');
-
-    // Loop through each of our prefixes
-    foreach($prefixes as $exponent => $suffix)
+    // Non-numeric parameter passed? Exception time!
+    if (!is_numeric($number))
     {
-      // If the p
-      if ($number >= pow(10, $exponent))
-      {
-
-        $return = intval($number / pow(10, $exponent)) . $suffix;
-
-        break;
-      }
+      throw new \InvalidArgumentException('Expected numeric value, '. gettype($number) .' passed!', 1);
     }
 
-    return $return;
+    // Check if we want to limit to 32bit integers
+      // Check if $number is more than $this->max32BitInterger
+      // If so return $this->max32BitInterger formatted
+    //
+
+    // Handle 1000-999999
+    if ($number >= pow(10, 3) && $number < pow(10, 6))
+    {
+      return ($number/pow(10, 3)) . 'k';
+    }
+    // Handle 1000000-999999999
+    elseif ($number >= pow(10, 6) && $number < pow(10, 9))
+    {
+      return ($number/pow(10, 6)) . 'm';
+    }
+    // Handle 1000000000-999999999999
+    elseif ($number >= pow(10, 9) && $number < pow(10, 12))
+    {
+      return ($number/pow(10,9)) . 'b';
+    }
+    // Else (lower than 1k)
+    else {
+      return $number;
+    }
+
   }
 
   public function expandNumber()

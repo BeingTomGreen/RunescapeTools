@@ -2,6 +2,8 @@
 
 class OSRS {
 
+  private $rstools;
+
   /**
    * __construct
    *
