@@ -1,12 +1,12 @@
 {
     "name": "rschallenges/runescapetools",
-    "description": "A collection of tools for the MMORPG Runescape.",
+    "description": "A collection of tools for the MMORPG Runescape written in PHP.",
     "keywords": ["runescape", "mmorpg", "rs", "jagex", "rs3", "rs2", "oldschool", "osrs", "api", "highscore"],
     "license": "MIT",
     "authors": [
         {
             "name": "Tom ",
-            "email": "tom@wfuk.com"
+            "email": "tom@beingtomgreen.com"
         }
     ],
     "require": {
