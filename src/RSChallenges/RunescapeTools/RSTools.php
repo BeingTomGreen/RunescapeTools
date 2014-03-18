@@ -37,7 +37,7 @@ class RSTools {
     if ($limitTo32Bit === true)
     {
       // Override $number to be the max 32 bit integer
-      $number = $max32BitInterger;
+      $number = $this->max32BitInterger;
     }
 
     // Handle 1000-999999
