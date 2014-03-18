@@ -10,24 +10,24 @@ Some of these may need two be done twice, once for EoC/RS3 and once for OldSchoo
 
 #### Basic Features
 
-- combat calculator
-- highscores lookup
-- mini game lookup
-- adventures log (would be handy to have direct access to set parts of this - eg `$player->alog->quests()`)
-- latest news
+- Combat calculator
+- Highscores lookup
+- Mini game lookup
+- Adventures log (would be handy to have direct access to set parts of this - eg `$player->alog->quests()`)
+- Latest news
 - I'd love to pull patch notes from some sort of API, although I don't know of one...
 
 #### Handy Tools
 
-- xp -> level converter
-- level -> xp converter
-- shorten number (convert 5000 to 5k) - done
-- expand number (convert 5k to 5000)
-- current player count
+- XP -> level converter
+- Level -> XP converter
+- Shorten number (convert 5000 to 5k) - done
+- Expand number (convert 5k to 5000)
+- Current player count
 
 ### Contributing
 
-Found a bug? Think you can improve on something? Shoot me a pull request / [email](mailto:tom@beingtomgreen.com) / [Tweet](https://twitter.com/beingtomgreen).
+Found a bug? Think you can improve on something? Shoot me a pull request / [email](mailto:tom@beingtomgreen.com) / [tweet](https://twitter.com/beingtomgreen).
 
 I very much welcome contributions, even if you just [report an issue](https://github.com/RsChallenges/RunescapeTools/issues)!
 
