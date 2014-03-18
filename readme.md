@@ -1,5 +1,7 @@
 ## Runescape Tools
 
+[![Scrutinizer Code Quality](https://scrutinizer-ci.com/g/RsChallenges/RunescapeTools/badges/quality-score.png?s=f89245ede2725f6a3bf0388d4d70cc263a4e1287)](https://scrutinizer-ci.com/g/RsChallenges/RunescapeTools/)
+
 A collection of tools for the MMORPG Runescape.
 
 ### Planned Features
