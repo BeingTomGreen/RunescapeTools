@@ -2,8 +2,8 @@
 
 use Illuminate\Support\ServiceProvider;
 
-class RunescapeToolsServiceProvider extends ServiceProvider {
-
+class RunescapeApiServiceProvider extends ServiceProvider
+{
   /**
    * Indicates if loading of the provider is deferred.
    *
