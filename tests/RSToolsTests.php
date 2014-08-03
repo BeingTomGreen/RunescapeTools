@@ -1,7 +1,7 @@
 <?php
 
-class RSToolsTests extends PHPUnit_Framework_TestCase {
-
+class RSToolsTests extends PHPUnit_Framework_TestCase
+{
   public function __construct()
   {
     $this->rsTools = new \RSChallenges\RunescapeTools\RSTools;

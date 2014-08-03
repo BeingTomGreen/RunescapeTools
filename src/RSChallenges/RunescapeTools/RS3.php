@@ -1,7 +1,7 @@
 <?php namespace RSChallenges\RunescapeTools;
 
-class RS3 {
-
+class RS3
+{
   private $rstools;
 
   /**
